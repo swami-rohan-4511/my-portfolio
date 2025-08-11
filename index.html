@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rohan Swami • Portfolio</title>
+    <meta name="description" content="SDE Trainee • Java, Spring Boot, Hibernate, MySQL" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-mark">SR</span>
+        </div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primaryNav" class="nav" aria-label="Primary">
+          <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+          <a href="skills.html"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+          <a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
+          <a href="projects.html"><i class="fa-solid fa-layer-group"></i> Projects</a>
+          <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+          <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+          <a class="btn small resume" href="resume/Rohan_Swami_Resume.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Resume</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero reveal">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>I'm <span class="accent">Rohan</span>, SDE Trainee</h1>
+            <p class="muted">Java • Spring Boot • Spring MVC • Hibernate • MySQL • JSP</p>
+            <div class="actions">
+              <a class="btn primary" href="projects.html">View Projects</a>
+              <a class="btn ghost" href="contact.html">Contact</a>
+            </div>
+            <div class="profiles">
+              <a href="https://github.com/swami-rohan-4511" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/rohan-swami-0160911b7/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://leetcode.com/u/swami_rohan_4511/" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i> LeetCode</a>
+            </div>
+          </div>
+          <div class="hero-icon" aria-hidden="true">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section reveal">
+        <div class="container grid two">
+          <div class="card">
+            <h2>About</h2>
+            <p class="muted">I build Java + Spring applications and love crafting clean, reliable software.</p>
+            <a class="btn ghost" href="about.html">Read more →</a>
+          </div>
+          <div class="card">
+            <h2>Featured Project</h2>
+            <p class="muted">Shopping Cart Web App — Spring Boot, Spring MVC, Hibernate, MySQL.</p>
+            <a class="btn ghost" href="projects.html">See all projects →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+        <p>© <span id="year"></span> Rohan Swami. Built with HTML, CSS, and JS.</p>
+        <div></div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

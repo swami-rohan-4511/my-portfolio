@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About • Rohan Swami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand"><span class="brand-mark">SR</span></div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primaryNav" class="nav" aria-label="Primary">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="active" href="about.html"><i class="fa-solid fa-user"></i> About</a>
+          <a href="skills.html"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+          <a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
+          <a href="projects.html"><i class="fa-solid fa-layer-group"></i> Projects</a>
+          <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+          <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+          <a class="btn small resume" href="resume/Rohan_Swami_Resume.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Resume</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container grid two">
+        <aside class="profile-card card reveal">
+          <div class="avatar" aria-label="Your photo">
+            <img src="images/profile.jpg" alt="Rohan Swami portrait" />
+          </div>
+          <h1 style="margin:12px 0 6px;">Rohan Swami</h1>
+          <p class="muted">SDE Trainee • Pune, Maharashtra</p>
+          <div class="links" style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+            <a href="mailto:rohanswami985@gmail.com"><i class="fa-solid fa-envelope"></i> rohanswami985@gmail.com</a>
+            <a href="tel:+919021626700"><i class="fa-solid fa-phone"></i> +91 90216 26700</a>
+          </div>
+          <a class="btn primary" style="margin-top:12px;" href="resume/Rohan_Swami_Resume.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </aside>
+        <section class="reveal">
+          <h2>About</h2>
+          <p class="muted">I am an SDE Trainee with hands-on experience in building Java and Spring-based web applications. I enjoy writing clean, readable code and learning modern backend practices. I believe in teamwork, mentorship, and delivering features with care and attention to detail. I aspire to work on challenging problems that impact real users.</p>
+          <p class="muted">Over time, I’ve built projects using Spring Boot, Spring MVC, Hibernate, and MySQL. I focus on scalable architectures, simple domain models, and reliable APIs. Outside of code, I like to explore databases, understand system performance, and keep refining my problem-solving mindset.</p>
+          <div style="margin-top:16px;">
+            <ul class="about-bullets">
+              <li><span>&gt;</span> Location: Pune, Maharashtra</li>
+              <li><span>&gt;</span> Languages: English, Hindi, Marathi, Kannad</li>
+            </ul>
+          </div>
+          <div class="card" style="margin-top:16px;">
+            <h3><i class="fa-solid fa-star"></i> Interests</h3>
+            <ul>
+              <li><i class="fa-solid fa-code"></i> Web Development</li>
+              <li><i class="fa-solid fa-database"></i> Databases</li>
+              <li><i class="fa-solid fa-chart-line"></i> Stock Market</li>
+              <li><i class="fa-solid fa-bullhorn"></i> Motivater</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
