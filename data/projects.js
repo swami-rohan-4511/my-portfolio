@@ -9,7 +9,7 @@ const projects = [
     title: "Shopping Cart Web Application",
     summary: "Full-stack Java app with Spring Boot + MVC, JSP, Hibernate and MySQL.",
     tech: ["Java", "Spring Boot", "Spring MVC", "JSP", "Hibernate", "MySQL"],
-    links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }]
+    links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511/Ecom" }]
   };
 function renderProjects(containerSelector, filter = 'all') {
   const grid = document.querySelector(containerSelector);
