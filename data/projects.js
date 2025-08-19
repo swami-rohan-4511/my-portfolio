@@ -10,31 +10,7 @@ const projects = [
     summary: "Full-stack Java app with Spring Boot + MVC, JSP, Hibernate and MySQL.",
     tech: ["Java", "Spring Boot", "Spring MVC", "JSP", "Hibernate", "MySQL"],
     links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }]
-  },
-  {
-    category: 'major',
-    title: "Job Portal Platform",
-    summary: "Multi-role job portal with auth, applications, and admin dashboard.",
-    tech: ["Java", "Spring Boot", "Spring Security", "Thymeleaf", "PostgreSQL"],
-    links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }]
-  },
-  {
-    category: 'major',
-    title: "E-Learning LMS",
-    summary: "Course creation, enrollments, quizzes, and progress tracking.",
-    tech: ["Java", "Spring Boot", "Hibernate", "MySQL", "REST"],
-    links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }]
-  },
-
-  // Mini Projects
-  { category: 'mini', title: "Notes REST API", summary: "CRUD API with JWT auth.", tech: ["Spring Boot", "JWT", "MongoDB"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-  { category: 'mini', title: "URL Shortener", summary: "Generate short links and track clicks.", tech: ["Spring Boot", "Redis", "PostgreSQL"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-  { category: 'mini', title: "Chat Server", summary: "WebSocket chat rooms.", tech: ["Java", "Spring Boot", "WebSocket"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-  { category: 'mini', title: "Portfolio Website", summary: "Responsive personal site.", tech: ["HTML", "CSS", "JavaScript"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-  { category: 'mini', title: "Todo MVC", summary: "Simple todo with filters and persistence.", tech: ["HTML", "CSS", "JavaScript"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-  { category: 'mini', title: "Weather Dashboard", summary: "Fetch and display city weather.", tech: ["JavaScript", "REST", "OpenWeather"], links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511" }] },
-];
-
+  };
 function renderProjects(containerSelector, filter = 'all') {
   const grid = document.querySelector(containerSelector);
   if (!grid) return;
