@@ -10,7 +10,14 @@ const projects = [
     summary: "Full-stack Java app with Spring Boot + MVC, JSP, Hibernate and MySQL.",
     tech: ["Java", "Spring Boot", "Spring MVC", "JSP", "Hibernate", "MySQL"],
     links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511/Ecom" }]
-  }];
+  },
+  { category: 'mini', 
+   title: "URL Shortener", 
+   summary: "Generates short links and track clicks.", 
+   tech: ["Spring Boot", "Redis", "PostgreSQL"], 
+   links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511/URL-Shortener" }] 
+  }
+];
 function renderProjects(containerSelector, filter = 'all') {
   const grid = document.querySelector(containerSelector);
   if (!grid) return;
