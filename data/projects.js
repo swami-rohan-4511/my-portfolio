@@ -15,7 +15,7 @@ const projects = [
     category: 'mini', 
     title: "URL Shortener", 
     summary: "Generates short links and track clicks.", 
-    tech: ["Spring Boot", "Redis", "PostgreSQL"], 
+    tech: ["Spring Boot","PostgreSQL","Render"], 
     links: [
       { label: "GitHub", url: "https://github.com/swami-rohan-4511/URL-Shortener" },
       { label: "Live Demo", url: "https://url-shortener-sgi6.onrender.com/" }
