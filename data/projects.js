@@ -22,6 +22,7 @@ const projects = [
     ] 
   }
 ];
+
 function renderProjects(containerSelector, filter = 'all') {
   const grid = document.querySelector(containerSelector);
   if (!grid) return;
@@ -29,9 +30,20 @@ function renderProjects(containerSelector, filter = 'all') {
     .filter(p => filter === 'all' ? true : p.category === filter)
     .map((p) => {
       const tech = p.tech.map((t) => `<span class="tags__chip">${t}</span>`).join("");
+
+      // updated links rendering
       const links = (p.links || [])
-        .map((l) => `<a href="${l.url}" target="_blank" rel="noopener"><i class=\"fa-brands fa-github\"></i> ${l.label}</a>`)
+        .map((l) => {
+          let icon = "";
+          if (l.label.toLowerCase().includes("github")) {
+            icon = `<i class="fa-brands fa-github"></i>`;
+          } else {
+            icon = `<i class="fa-solid fa-link"></i>`;
+          }
+          return `<a href="${l.url}" target="_blank" rel="noopener">${icon} ${l.label}</a>`;
+        })
         .join(" ");
+
       return `
         <article class="card">
           <h3>${p.title}</h3>
@@ -46,5 +58,3 @@ function renderProjects(containerSelector, filter = 'all') {
 
 // Expose function globally for inline call in projects.html
 window.renderProjects = renderProjects;
-
-
