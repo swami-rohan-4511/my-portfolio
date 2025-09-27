@@ -83,9 +83,26 @@ body {
 .tags li { background: rgba(255,255,255,.04); border:1px solid var(--border); padding: 6px 10px; border-radius:999px; font-size: 13px; color: var(--muted); }
 .tags__chip { background: rgba(255,255,255,.04); border:1px solid var(--border); padding: 6px 10px; border-radius:999px; font-size: 13px; color: var(--muted); display:inline-block; margin:4px 6px 0 0; }
 
+/* 🔹 Project links styling */
 .links { list-style:none; padding:0; margin: 8px 0 0; }
-.links a { color: var(--muted); text-decoration:none; }
-.links a:hover { color: var(--text); }
+.links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 12px;  /* space between buttons */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;  /* space between icon & text */
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+.links a:hover {
+  color: var(--text);
+  border-color: rgba(124,92,255,.5);
+  background: rgba(255,255,255,.04);
+}
 
 .timeline { display:grid; gap:16px; }
 .item { background: var(--elev); border:1px solid var(--border); border-radius: 14px; padding: 16px; }
@@ -168,5 +185,3 @@ body {
   .skills-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
-
-
