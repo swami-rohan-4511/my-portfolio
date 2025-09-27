@@ -11,11 +11,15 @@ const projects = [
     tech: ["Java", "Spring Boot", "Spring MVC", "JSP", "Hibernate", "MySQL"],
     links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511/Ecom" }]
   },
-  { category: 'mini', 
-   title: "URL Shortener", 
-   summary: "Generates short links and track clicks.", 
-   tech: ["Spring Boot", "Redis", "PostgreSQL"], 
-   links: [{ label: "GitHub", url: "https://github.com/swami-rohan-4511/URL-Shortener" }] 
+  { 
+    category: 'mini', 
+    title: "URL Shortener", 
+    summary: "Generates short links and track clicks.", 
+    tech: ["Spring Boot", "Redis", "PostgreSQL"], 
+    links: [
+      { label: "GitHub", url: "https://github.com/swami-rohan-4511/URL-Shortener" },
+      { label: "Live Demo", url: "https://url-shortener-sgi6.onrender.com/" }
+    ] 
   }
 ];
 function renderProjects(containerSelector, filter = 'all') {
